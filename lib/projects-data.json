@@ -1,0 +1,110 @@
+[
+  {
+    "title": "ArtVerse",
+    "description": "A creative digital art platform showcasing artistic expressions and visual creativity.",
+    "image": "/screenshots/artverse.png",
+    "link": "https://igor-kan.github.io/artverse",
+    "githubLink": "https://github.com/igor-kan/artverse",
+    "tags": [
+      "Art",
+      "Creative",
+      "Digital Art"
+    ]
+  },
+  {
+    "title": "BibleReader",
+    "description": "A modern Bible reading application with clean interface for studying scripture, featuring multiple translations and search functionality.",
+    "image": "/screenshots/biblereader.png",
+    "link": "https://igor-kan.github.io/biblereader",
+    "githubLink": "https://github.com/igor-kan/biblereader",
+    "tags": [
+      "Reading",
+      "Scripture",
+      "Next.js"
+    ]
+  },
+  {
+    "title": "AutoOps",
+    "description": "Automated operations management platform for legacy AI systems with workflow automation and monitoring analytics.",
+    "image": "/screenshots/autoops.png",
+    "link": "https://igor-kan.github.io/autoops",
+    "githubLink": "https://github.com/igor-kan/autoops",
+    "tags": [
+      "Automation",
+      "AI Operations",
+      "Workflow"
+    ]
+  },
+  {
+    "title": "AutoWork",
+    "description": "Task automation platform to boost productivity with customizable triggers, actions, and integration with popular tools.",
+    "image": "/screenshots/autowork.png",
+    "link": "https://igor-kan.github.io/autowork",
+    "githubLink": "https://github.com/igor-kan/autowork",
+    "tags": [
+      "Productivity",
+      "Automation",
+      "Workflow"
+    ]
+  },
+  {
+    "title": "AntiHate",
+    "description": "Platform for combating hate speech and promoting positive online discourse with community moderation and educational resources.",
+    "image": "/screenshots/antihate.png",
+    "link": "https://igor-kan.github.io/antihate",
+    "githubLink": "https://github.com/igor-kan/antihate",
+    "tags": [
+      "Social Impact",
+      "Moderation",
+      "Community"
+    ]
+  },
+  {
+    "title": "AlgoFund",
+    "description": "Algorithmic trading and investment fund management platform with backtesting, portfolio tracking, and real-time market data.",
+    "image": "/screenshots/algofund.png",
+    "link": "https://igor-kan.github.io/algofund",
+    "githubLink": "https://github.com/igor-kan/algofund",
+    "tags": [
+      "FinTech",
+      "Trading",
+      "Investment"
+    ]
+  },
+  {
+    "title": "AIStylist",
+    "description": "AI-powered wardrobe management app with outfit recommendations, virtual try-on features, and personalized style profiles.",
+    "image": "/screenshots/aistylist.png",
+    "link": "https://igor-kan.github.io/aistylist",
+    "githubLink": "https://github.com/igor-kan/aistylist",
+    "tags": [
+      "AI",
+      "Fashion",
+      "Style"
+    ]
+  },
+  {
+    "title": "LedgerAI",
+    "description": "Automated ledger management with AI-powered accounting insights, transaction management, and real-time analytics.",
+    "image": "/screenshots/ledgerai.png",
+    "link": "https://igor-kan.github.io/ledgerai",
+    "githubLink": "https://github.com/igor-kan/ledgerai",
+    "tags": [
+      "AI",
+      "Accounting",
+      "Finance"
+    ]
+  },
+  {
+    "title": "AetherHealth",
+    "description": "Modern health management application with comprehensive features for tracking and managing personal health data.",
+    "image": "/screenshots/aetherhealth.png",
+    "link": "https://igor-kan.github.io/aetherhealth",
+    "githubLink": "https://github.com/igor-kan/aetherhealth",
+    "tags": [
+      "Healthcare",
+      "Management",
+      "Wellness"
+    ]
+  }
+]

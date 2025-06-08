@@ -4,8 +4,111 @@ import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
 import TechStack from "./components/tech-stack"
+import fs from 'fs'
+import path from 'path'
+
+// Project type definition
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  githubLink: string;
+  tags: string[];
+}
+
+// Dynamically load projects data
+function getProjectsData(): Project[] {
+  try {
+    const projectsPath = path.join(process.cwd(), 'lib', 'projects-data.json');
+    if (fs.existsSync(projectsPath)) {
+      const projectsData = fs.readFileSync(projectsPath, 'utf8');
+      return JSON.parse(projectsData);
+    }
+  } catch (error) {
+    console.error('Error loading projects data:', error);
+  }
+  
+  // Fallback to hardcoded data if file doesn't exist
+  return [
+    {
+      title: "ArtVerse",
+      description: "A creative digital art platform showcasing artistic expressions and visual creativity.",
+      image: "/screenshots/artverse.png",
+      link: "https://igor-kan.github.io/artverse",
+      githubLink: "https://github.com/igor-kan/artverse",
+      tags: ["Art", "Creative", "Digital Art"]
+    },
+    {
+      title: "BibleReader",
+      description: "A modern Bible reading application with clean interface for studying scripture, featuring multiple translations and search functionality.",
+      image: "/screenshots/biblereader.png",
+      link: "https://igor-kan.github.io/biblereader",
+      githubLink: "https://github.com/igor-kan/biblereader",
+      tags: ["Reading", "Scripture", "Next.js"]
+    },
+    {
+      title: "AutoOps",
+      description: "Automated operations management platform for legacy AI systems with workflow automation and monitoring analytics.",
+      image: "/screenshots/autoops.png",
+      link: "https://igor-kan.github.io/autoops",
+      githubLink: "https://github.com/igor-kan/autoops",
+      tags: ["Automation", "AI Operations", "Workflow"]
+    },
+    {
+      title: "AutoWork",
+      description: "Task automation platform to boost productivity with customizable triggers, actions, and integration with popular tools.",
+      image: "/screenshots/autowork.png",
+      link: "https://igor-kan.github.io/autowork",
+      githubLink: "https://github.com/igor-kan/autowork",
+      tags: ["Productivity", "Automation", "Workflow"]
+    },
+    {
+      title: "AntiHate",
+      description: "Platform for combating hate speech and promoting positive online discourse with community moderation and educational resources.",
+      image: "/screenshots/antihate.png",
+      link: "https://igor-kan.github.io/antihate",
+      githubLink: "https://github.com/igor-kan/antihate",
+      tags: ["Social Impact", "Moderation", "Community"]
+    },
+    {
+      title: "AlgoFund",
+      description: "Algorithmic trading and investment fund management platform with backtesting, portfolio tracking, and real-time market data.",
+      image: "/screenshots/algofund.png",
+      link: "https://igor-kan.github.io/algofund",
+      githubLink: "https://github.com/igor-kan/algofund",
+      tags: ["FinTech", "Trading", "Investment"]
+    },
+    {
+      title: "AIStylist",
+      description: "AI-powered wardrobe management app with outfit recommendations, virtual try-on features, and personalized style profiles.",
+      image: "/screenshots/aistylist.png",
+      link: "https://igor-kan.github.io/aistylist",
+      githubLink: "https://github.com/igor-kan/aistylist",
+      tags: ["AI", "Fashion", "Style"]
+    },
+    {
+      title: "LedgerAI",
+      description: "Automated ledger management with AI-powered accounting insights, transaction management, and real-time analytics.",
+      image: "/screenshots/ledgerai.png",
+      link: "https://igor-kan.github.io/ledgerai",
+      githubLink: "https://github.com/igor-kan/ledgerai",
+      tags: ["AI", "Accounting", "Finance"]
+    },
+    {
+      title: "AetherHealth",
+      description: "Modern health management application with comprehensive features for tracking and managing personal health data.",
+      image: "/screenshots/aetherhealth.png",
+      link: "https://igor-kan.github.io/aetherhealth",
+      githubLink: "https://github.com/igor-kan/aetherhealth",
+      tags: ["Healthcare", "Management", "Wellness"]
+    }
+  ];
+}
 
 export default function Page() {
+  const projects = getProjectsData();
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -85,78 +188,17 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="Nuvva Art"
-                description="A creative digital art platform showcasing artistic expressions and visual creativity."
-                image="https://igor-kan.github.io/artverse/screenshot.png"
-                link="https://igor-kan.github.io/artverse"
-                githubLink="https://github.com/igor-kan/artverse"
-                tags={["Art", "Creative", "Digital Art"]}
-              />
-              <ProjectCard
-                title="BibleReader"
-                description="A modern Bible reading application with clean interface for studying scripture, featuring multiple translations and search functionality."
-                image="https://igor-kan.github.io/biblereader/screenshot.png"
-                link="https://igor-kan.github.io/biblereader"
-                githubLink="https://github.com/igor-kan/biblereader"
-                tags={["Reading", "Scripture", "Next.js"]}
-              />
-              <ProjectCard
-                title="AutoOps"
-                description="Automated operations management platform for legacy AI systems with workflow automation and monitoring analytics."
-                image="https://igor-kan.github.io/autoops/screenshot.png"
-                link="https://igor-kan.github.io/autoops"
-                githubLink="https://github.com/igor-kan/autoops"
-                tags={["Automation", "AI Operations", "Workflow"]}
-              />
-              <ProjectCard
-                title="AutoWork"
-                description="Task automation platform to boost productivity with customizable triggers, actions, and integration with popular tools."
-                image="https://igor-kan.github.io/autowork/screenshot.png"
-                link="https://igor-kan.github.io/autowork"
-                githubLink="https://github.com/igor-kan/autowork"
-                tags={["Productivity", "Automation", "Workflow"]}
-              />
-              <ProjectCard
-                title="AntiHate"
-                description="Platform for combating hate speech and promoting positive online discourse with community moderation and educational resources."
-                image="https://igor-kan.github.io/antihate/screenshot.png"
-                link="https://igor-kan.github.io/antihate"
-                githubLink="https://github.com/igor-kan/antihate"
-                tags={["Social Impact", "Moderation", "Community"]}
-              />
-              <ProjectCard
-                title="AlgoFund"
-                description="Algorithmic trading and investment fund management platform with backtesting, portfolio tracking, and real-time market data."
-                image="https://igor-kan.github.io/algofund/screenshot.png"
-                link="https://igor-kan.github.io/algofund"
-                githubLink="https://github.com/igor-kan/algofund"
-                tags={["FinTech", "Trading", "Investment"]}
-              />
-              <ProjectCard
-                title="AIStylist"
-                description="AI-powered wardrobe management app with outfit recommendations, virtual try-on features, and personalized style profiles."
-                image="https://igor-kan.github.io/aistylist/screenshot.png"
-                link="https://igor-kan.github.io/aistylist"
-                githubLink="https://github.com/igor-kan/aistylist"
-                tags={["AI", "Fashion", "Style"]}
-              />
-              <ProjectCard
-                title="LedgerAI"
-                description="Automated ledger management with AI-powered accounting insights, transaction management, and real-time analytics."
-                image="https://igor-kan.github.io/ledgerai/screenshot.png"
-                link="https://igor-kan.github.io/ledgerai"
-                githubLink="https://github.com/igor-kan/ledgerai"
-                tags={["AI", "Accounting", "Finance"]}
-              />
-              <ProjectCard
-                title="AetherHealth"
-                description="Modern health management application with comprehensive features for tracking and managing personal health data."
-                image="https://igor-kan.github.io/aetherhealth/screenshot.png"
-                link="https://igor-kan.github.io/aetherhealth"
-                githubLink="https://github.com/igor-kan/aetherhealth"
-                tags={["Healthcare", "Management", "Wellness"]}
-              />
+              {projects.map((project) => (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  link={project.link}
+                  githubLink={project.githubLink}
+                  tags={project.tags}
+                />
+              ))}
             </div>
           </div>
         </section>
