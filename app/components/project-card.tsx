@@ -47,7 +47,6 @@ export default function ProjectCard({ title, description, image, link, githubLin
             <Link 
               href={githubLink} 
               target="_blank" 
-              onClick={(e) => e.stopPropagation()}
               className="inline-flex items-center gap-2 text-sm hover:underline"
             >
               <Github className="h-4 w-4" />
