@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
