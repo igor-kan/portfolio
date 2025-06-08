@@ -30,6 +30,8 @@ jobs:
           node-version: '20'
       - name: Install dependencies
         run: npm install
+      - name: Generate screenshots
+        run: npm run generate-screenshots
       - name: Build
         run: npm run build
       - name: Setup Pages

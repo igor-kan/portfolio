@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "generate-screenshots": "node generate-screenshots.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -69,6 +70,7 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "puppeteer": "^22.12.1"
   }
 }
