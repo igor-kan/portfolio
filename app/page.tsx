@@ -87,45 +87,75 @@ export default function Page() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="Nuvva Art"
-                description="A creative art website showcasing digital artwork and artistic expressions."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://nuvva.art"
-                tags={["Art", "Creative", "Web Design"]}
+                description="A creative digital art platform showcasing artistic expressions and visual creativity."
+                image="https://igor-kan.github.io/artverse/screenshot.png"
+                link="https://igor-kan.github.io/artverse"
+                githubLink="https://github.com/igor-kan/artverse"
+                tags={["Art", "Creative", "Digital Art"]}
               />
               <ProjectCard
-                title="Get to Know Zahlen"
-                description="An interactive platform for learning and exploring numerical concepts."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://zahlen.space"
-                tags={["Education", "Mathematics", "Interactive"]}
+                title="BibleReader"
+                description="A modern Bible reading application with clean interface for studying scripture, featuring multiple translations and search functionality."
+                image="https://igor-kan.github.io/biblereader/screenshot.png"
+                link="https://igor-kan.github.io/biblereader"
+                githubLink="https://github.com/igor-kan/biblereader"
+                tags={["Reading", "Scripture", "Next.js"]}
               />
               <ProjectCard
-                title="Browser Reader App"
-                description="A clean, distraction-free reading application for web content."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://lesenheit.space"
-                tags={["Reading", "Productivity", "Web App"]}
+                title="AutoOps"
+                description="Automated operations management platform for legacy AI systems with workflow automation and monitoring analytics."
+                image="https://igor-kan.github.io/autoops/screenshot.png"
+                link="https://igor-kan.github.io/autoops"
+                githubLink="https://github.com/igor-kan/autoops"
+                tags={["Automation", "AI Operations", "Workflow"]}
               />
               <ProjectCard
-                title="Educational Games"
-                description="A collection of interactive educational games for learning."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://ludorum.space"
-                tags={["Games", "Education", "Interactive"]}
+                title="AutoWork"
+                description="Task automation platform to boost productivity with customizable triggers, actions, and integration with popular tools."
+                image="https://igor-kan.github.io/autowork/screenshot.png"
+                link="https://igor-kan.github.io/autowork"
+                githubLink="https://github.com/igor-kan/autowork"
+                tags={["Productivity", "Automation", "Workflow"]}
               />
               <ProjectCard
-                title="Multilingual Translator"
-                description="A powerful translation tool supporting multiple languages."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://versor.space"
-                tags={["Translation", "Languages", "Utility"]}
+                title="AntiHate"
+                description="Platform for combating hate speech and promoting positive online discourse with community moderation and educational resources."
+                image="https://igor-kan.github.io/antihate/screenshot.png"
+                link="https://igor-kan.github.io/antihate"
+                githubLink="https://github.com/igor-kan/antihate"
+                tags={["Social Impact", "Moderation", "Community"]}
               />
               <ProjectCard
-                title="Nucleus Demo"
-                description="A demonstration of innovative ideas and concepts in action."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://youridea.live"
-                tags={["Demo", "Innovation", "Concept"]}
+                title="AlgoFund"
+                description="Algorithmic trading and investment fund management platform with backtesting, portfolio tracking, and real-time market data."
+                image="https://igor-kan.github.io/algofund/screenshot.png"
+                link="https://igor-kan.github.io/algofund"
+                githubLink="https://github.com/igor-kan/algofund"
+                tags={["FinTech", "Trading", "Investment"]}
+              />
+              <ProjectCard
+                title="AIStylist"
+                description="AI-powered wardrobe management app with outfit recommendations, virtual try-on features, and personalized style profiles."
+                image="https://igor-kan.github.io/aistylist/screenshot.png"
+                link="https://igor-kan.github.io/aistylist"
+                githubLink="https://github.com/igor-kan/aistylist"
+                tags={["AI", "Fashion", "Style"]}
+              />
+              <ProjectCard
+                title="LedgerAI"
+                description="Automated ledger management with AI-powered accounting insights, transaction management, and real-time analytics."
+                image="https://igor-kan.github.io/ledgerai/screenshot.png"
+                link="https://igor-kan.github.io/ledgerai"
+                githubLink="https://github.com/igor-kan/ledgerai"
+                tags={["AI", "Accounting", "Finance"]}
+              />
+              <ProjectCard
+                title="AetherHealth"
+                description="Modern health management application with comprehensive features for tracking and managing personal health data."
+                image="https://igor-kan.github.io/aetherhealth/screenshot.png"
+                link="https://igor-kan.github.io/aetherhealth"
+                githubLink="https://github.com/igor-kan/aetherhealth"
+                tags={["Healthcare", "Management", "Wellness"]}
               />
             </div>
           </div>
